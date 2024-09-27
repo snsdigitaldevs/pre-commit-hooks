@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import * as fs from 'fs';
+const fs = require('fs');
 
 const TICKET_PREFIX = ['TO', 'ECS', 'P20E'];
 

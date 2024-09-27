@@ -1,5 +1,8 @@
 Pimsleur [pre-commit](https://pre-commit.com/) hooks repo
 
+# Requires
+- node >= 16
+
 # Hooks
 
 These hooks will be referenced by other pimsleur projects on demand
