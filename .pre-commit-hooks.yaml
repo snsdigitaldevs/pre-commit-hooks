@@ -1,0 +1,7 @@
+- id: check-commit-msg
+  name: check-commit-msg
+  entry: npx ts-node hooks/check-commit-msg.ts
+  description: Checks commit message for Conventional Commits formatting
+  language: node
+  always_run: true
+  stages: [commit-msg]

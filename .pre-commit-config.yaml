@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-commit-msg
+        name: check-commit-msg
+        entry: npx ts-node hooks/check-commit-msg.ts
+        language: node
+        stages: [commit-msg]

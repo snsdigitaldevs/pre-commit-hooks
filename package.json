@@ -1,0 +1,12 @@
+{
+  "name": "pre-commit-hooks",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
