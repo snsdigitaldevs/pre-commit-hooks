@@ -6,3 +6,4 @@ repos:
         entry: node ./hooks/check-commit-msg.js
         language: node
         stages: [commit-msg]
+        args: [feat, fix, test, docs, refactor, style, chore, perf, build, ci]
