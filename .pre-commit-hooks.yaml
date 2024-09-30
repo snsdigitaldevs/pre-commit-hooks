@@ -1,6 +1,6 @@
 - id: check-commit-msg
   name: check-commit-msg
-  entry: node ./hooks/check-commit-msg.js
+  entry: node hooks/check-commit-msg.js
   description: Checks commit message for Conventional Commits formatting
   language: node
   always_run: true

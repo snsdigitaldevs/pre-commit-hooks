@@ -3,6 +3,6 @@ repos:
     hooks:
       - id: check-commit-msg
         name: check-commit-msg
-        entry: node ./hooks/check-commit-msg.js
+        entry: node hooks/check-commit-msg.js
         language: node
         stages: [commit-msg]
