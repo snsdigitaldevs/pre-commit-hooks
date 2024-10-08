@@ -1,7 +1,9 @@
 Pimsleur [pre-commit](https://pre-commit.com/) hooks repo
 
-# Requires
-- node >= 16
+# Init Project
+```shell
+python3 install .
+```
 
 # Hooks
 

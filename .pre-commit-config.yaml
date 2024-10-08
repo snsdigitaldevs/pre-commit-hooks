@@ -2,7 +2,10 @@ repos:
   - repo: local
     hooks:
       - id: check-commit-msg
-        name: check-commit-msg
-        entry: node hooks/check-commit-msg.js
-        language: node
-        stages: [commit-msg]
+        name: check commit message (local)
+        entry: check-commit-msg
+        language: python
+        verbose: true
+        always_run: true
+        args: [ feat, fix, test, docs, refactor, style, chore, perf, build, ci ]
+        stages: [ commit-msg ]

@@ -1,0 +1,30 @@
+[project]
+name = "hooks"
+version = "0.0.1"
+readme = "README.md"
+classifiers = ["Programming Language :: Python :: 3 :: Only"]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "pre-commit",
+    "setuptools_scm",
+]
+
+[project.scripts]
+check-commit-msg = "hooks.check_commit_msg:main"
+
+[build-system]
+requires = ["setuptools>=65", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.pyright]
+include = ["hooks"]
+
+[tool.setuptools]
+packages = ["hooks"]
+
+[tool.setuptools_scm]
+# intentionally left blank, but we need the section header to activate the tool
