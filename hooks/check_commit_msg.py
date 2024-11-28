@@ -33,7 +33,7 @@ def validate_commit_message(commit_message, supported_types):
     ticket_pattern = r"((({}))-\d+|N/A)".format("|".join(TICKET_PREFIX))
     type_pattern = r"({})".format("|".join(supported_types))
     regex = re.compile(rf"^{ticket_pattern} {type_pattern}: [\s\S]+$")
-    return regex.match(commit_message) is not None
+    return commit_message.startswith("Merge branch") or (regex.match(commit_message) is not None)
 
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
