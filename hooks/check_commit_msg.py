@@ -31,9 +31,9 @@ DEFAULT_COMMIT_TYPE = [
     "test",
 ]
 
-def validate_commit_message(commit_message: str):
+def validate_commit_message(commit_message, supported_types):
     ticket_pattern = r"((({}))-\d+|N/A)".format("|".join(TICKET_PREFIX))
-    type_pattern = r"({})".format("|".join(DEFAULT_COMMIT_TYPE))
+    type_pattern = r"({})".format("|".join(supported_types))
     regex = re.compile(rf"^{ticket_pattern} {type_pattern}: [\s\S]+$")
     special_prefix_regex = re.compile(r"^({})".format("|".join(SPECIAL_PREFIX)))
     return (special_prefix_regex.match(commit_message) is not None) or (regex.match(commit_message) is not None)
