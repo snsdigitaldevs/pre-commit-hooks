@@ -13,7 +13,7 @@ class Colors:
 RESULT_SUCCESS = 0
 RESULT_FAIL = 1
 
-TICKET_PREFIX = ["TO", "ECS", "P20E", "CRS"]
+TICKET_PREFIX = ["TO", "ECS", "P20E", "CRS", "VR"]
 
 SPECIAL_PREFIX = ["Merge branch", "Revert"]
 
