@@ -2,7 +2,7 @@ Pimsleur [pre-commit](https://pre-commit.com/) hooks repo
 
 # Init Project
 ```shell
-python3 install .
+pip install .
 ```
 
 # Hooks
